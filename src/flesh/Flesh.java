@@ -1,24 +1,23 @@
 package flesh;
 
-import flesh.entities.FleshNPCEntity;
-import flesh.entities.FleshEntity;
-import flesh.entities.FleshPlayerEntity;
-import flesh.entities.FleshProjectileEntity;
-import flesh.entities.FleshResourceEntity;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
-import java.io.IOException;
 import java.util.Date;
-import javax.swing.JFrame;
 import java.util.concurrent.CopyOnWriteArrayList;
+
+import javax.swing.JFrame;
+
+import flesh.entities.FleshEntity;
+import flesh.entities.FleshNPCEntity;
+import flesh.entities.FleshPlayerEntity;
+import flesh.entities.FleshProjectileEntity;
+import flesh.entities.FleshResourceEntity;
 import javafx.embed.swing.JFXPanel;
-import javax.imageio.ImageIO;
 
 public class Flesh extends JFXPanel {
 
@@ -63,7 +62,6 @@ public class Flesh extends JFXPanel {
         j1.addKeyListener(new FleshKeyListener());
         j1.setFocusable(true);
         j1.requestFocusInWindow();
-        System.out.println("Adding Mouse Listner");
         fleshInstance.addMouseListener(mouseListener);
 
         //Initiate threads

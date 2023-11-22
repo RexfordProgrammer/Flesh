@@ -4,7 +4,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 /**
- *
+ * Listens to mouse clicks
  * @author Rexford
  */
 public class CustomMouseListener implements MouseListener {
@@ -16,13 +16,13 @@ public class CustomMouseListener implements MouseListener {
             // Add your logic for mouse click event
         }
 
+        //Starts fire operation in another thread
         @Override
         public void mousePressed(MouseEvent e) {
             Flesh.player.isFiring = true;
-
-            
         }
 
+        //Stops fire operation in another thread
         @Override
         public void mouseReleased(MouseEvent e) {
             Flesh.player.isFiring = false;

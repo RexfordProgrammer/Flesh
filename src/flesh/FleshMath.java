@@ -42,7 +42,6 @@ public class FleshMath {
         if (p1 != null && p2 != null) {
             return Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
         }
-        //lol 10
         return 69;
     }
 

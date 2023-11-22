@@ -15,7 +15,7 @@ public abstract class FleshEntity implements Comparable {
         this.location = location;
     }
 
-    //This returns if the two "hitboxes" are intersepting
+    //This returns if the two "hitboxes" are intercepting
     @Override
     public int compareTo(Object o) {
         if (o instanceof FleshEntity) {
@@ -23,7 +23,7 @@ public abstract class FleshEntity implements Comparable {
 
             FleshPoint p1 = new FleshPoint(location.x - size / 2, location.y - size / 2);
             FleshPoint p2 = new FleshPoint(f1.location.x - size / 2, f1.location.y - size / 2);
-            System.out.println(FleshMath.distanceBetweenPoints(p1, p2));
+            //System.out.println(FleshMath.distanceBetweenPoints(p1, p2));
 
             return -(int) (FleshMath.distanceBetweenPoints(p1, p2)
                     - size / 2 - f1.size / 2);
