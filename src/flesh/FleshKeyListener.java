@@ -80,6 +80,7 @@ public class FleshKeyListener implements KeyListener {
         }
     }
 
+    //Changes weapon when q is pressed
     private void cycleWeapons() {
         if (player.currentWeapIndex < player.weapons.size() - 1) {
             player.currentWeapIndex++;
@@ -87,13 +88,15 @@ public class FleshKeyListener implements KeyListener {
             player.currentWeapIndex = 0;
         }
             player.loadImage();
-            System.out.println(player.weapons.get(player.currentWeapIndex).weapName.toLowerCase());
+            //System.out.println(player.weapons.get(player.currentWeapIndex).weapName.toLowerCase());
     }
 
+    //pauses game
     private void pauseAction() {
         Flesh.isGamePaused = !Flesh.isGamePaused;
     }
 
+    //not needed
     @Override
     public void keyTyped(KeyEvent e) {
     }
