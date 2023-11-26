@@ -36,7 +36,7 @@ public class FleshPlayerEntity extends FleshNPCEntity {
         this.weapons.add(new FleshPistolResource(-1));       
         
         // Prev load image
-        System.out.println(weapons.get(currentWeapIndex).weapName.toLowerCase());
+        //System.out.println(weapons.get(currentWeapIndex).weapName.toLowerCase());
         try {
             image = ImageIO.read(FleshPlayerEntity.class.getResource("/flesh/images/player_"+weapons.get(currentWeapIndex).weapName.toLowerCase()+".png"));
         } catch (IOException e) {
